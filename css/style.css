@@ -1,0 +1,305 @@
+/*** == Font Integration Start == ***/
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Poppins Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Lobster Font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*** == Font Integration End == ***/
+
+/*** == Common CSS Start == ***/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 78px;
+    color: #fff;
+}
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    line-height: 54px;
+}
+p{
+    font-size: 18px;
+    line-height: 28px;
+    color:  #707070;
+}
+button {
+    margin-top: 40px;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #FF5959;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+.flex-content{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.common-margin{
+    margin-top: 15px;
+}
+/*** == Common CSS End == ***/
+
+
+/*** == Hero CSS Start == ***/
+.hero-section{
+    background-image:
+            linear-gradient(to bottom, rgba(10, 5, 5, 0.475), rgba(0, 0, 0, 0.7)),
+            url('../images/donation-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-content, .today-content{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.focus-content{
+    margin: 0 auto;
+}
+.hero-content .focus-content p{
+    color: #fff;
+}
+.focus-content a button:hover{
+    background-color: #fff;
+    color: #FF5959;
+}
+/*** == Hero CSS End == ***/
+
+
+/*** == Donate Soon CSS Start == ***/
+.donate-today{
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.today-pricing{
+    margin: 50px auto;
+    margin-top: ;
+    display: flex;
+} 
+.single-price {
+    padding: 40px 10px;
+    margin: 0 10px;
+    width: 130px;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    border: 3px solid #FAFAFA;
+    transition: .3s;
+}
+.single-price:nth-child(3) {
+    background-color: #FFEEEE;
+    border: 3px solid #FF5959;
+}
+.single-price:hover{
+    background-color: #FFEEEE;
+    border: 3px solid #FF5959;
+}
+.single-price p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.other-amount input{
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.416);
+}
+.other-amount input:focus{
+    outline: none;
+}
+.donate-today a button{
+    margin-top: 20px;
+}
+.donate-today a button:hover{
+    background-color: #707070;
+    color: #fff;
+}
+/*** == Donate Today CSS End == ***/
+
+/*** == Our Donation CSS Start == ***/
+.our-donation{
+    margin: 0 auto;
+    padding-bottom: 100px;
+    width: 80%;
+}
+.donation-type{
+    margin-top: 50px;
+}
+.donation-type .single-donation-type{
+    width: 33.33%;
+    padding: 50px 20px;
+    text-align: left;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: .3s;
+}
+.donation-type .single-donation-type:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.donation-type .single-donation-type:nth-child(2){
+    width: 33.34%;
+}
+.donation-type .single-donation-type p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.donation-type .single-donation-type:nth-child(1) {
+    background: rgba(79, 157, 166, 0.1);
+}
+.donation-type .single-donation-type:nth-child(2) {
+    background: rgba(255, 89, 89, 0.1);
+}
+.donation-type .single-donation-type:nth-child(3) {
+    background: #FFF4D6;
+}
+/*** == Our Donation CSS End == ***/
+
+/*** == Our Team CSS Start == ***/
+.our-team-section{
+    padding: 100px 0;
+    background-color: #FAFAFA;
+}
+.our-team{
+    margin: 0 auto;
+    width: 80%;
+}
+.all-member{
+    margin-top: 40px;
+    display: flex;
+}
+.all-member .single-member{
+    width: 25%;
+    margin: 0 10px;
+    padding: 50px 20px;
+    background-color: #FFEEEE;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .5s;
+}
+.all-member .single-member:hover{
+    background-color: #fff;
+    box-shadow: rgba(250, 2, 2, 0.236) 0px 5px 8px;
+}
+.all-member .client-img{
+    text-align: center;
+}
+.all-member .single-member .client-img img{
+    width: 100px;
+    border: 5px solid #FF5959;
+    border-radius: 100%;
+}
+.all-member .single-member p{
+    font-size:14px;
+}
+.all-member ul{
+    text-align: center;
+}
+.all-member ul li{
+    margin: 3px;
+    display: inline-block;
+    list-style: none;
+}
+.all-member ul li a i{
+    width: 35px;
+    height: 35px;
+    padding-top: 7px;
+    text-align: center;
+    background-color: #FF5959;
+    color: #fff;
+    border: 3px solid #FF5959;
+    border-radius: 100%;
+    transition: .3s;
+}
+.all-member ul li a i:hover{
+    background-color: #fff;
+    color: #FF5959;
+}
+/*** == Our Team CSS End == ***/
+
+/*** == Get Update CSS Start == ***/
+.get-update{
+    padding: 100px 0;
+}
+.get-email{
+    width: 60%;
+    margin: 40px auto 0;
+    padding: 70px 0;
+    background-color: #FFF4D6;
+    text-align: center;
+}
+.get-email input#emails{
+    margin: 0;
+    padding: 14px;
+    width: 35%;
+    border: 0;
+    background-color: #D9D9D9;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px 0 0 5px;
+}
+.get-email input#emails::placeholder {
+    color: #707070ba;
+}
+.get-email a input{
+    margin-left: -5px;
+    padding: 14px;
+    width: 20%;
+    background-color: #FF5959;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+.get-email input:focus {
+    outline: none;
+}
+.get-email input:hover{
+    background-color: #707070;
+}
+/*** == Get Update CSS End == ***/
+
+
+/*** == Footer CSS Start == ***/
+.footer-section{
+    padding: 50px;
+    background-color: #0B0D17;
+    text-align: center;
+}
+.footer-section h3{
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+    color: #FF5959;
+}
+.footer-section p{
+    font-size: 14px;
+    font-weight: 300px;
+    color: #D9DBE1;
+}
+/*** == Footer CSS End == ***/
+
+
